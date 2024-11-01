@@ -1,0 +1,235 @@
+/**
+ * Checkbox Three
+ */
+ .mwb_checkboxThree {
+  width: 120px;
+  height: 40px;
+  background: #333;
+  margin: 20px 60px;
+  border-radius: 50px;
+  position: relative;
+}
+/**
+ * Create the text for the On position
+ */
+ .mwb_checkboxThree:before {
+  content: 'On';
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  height: 2px;
+  color: #26ca28;
+  font-size: 16px;
+}
+/**
+ * Create the label for the off position
+ */
+ .mwb_checkboxThree:after {
+  content: 'Off';
+  position: absolute;
+  top: 12px;
+  left: 84px;
+  height: 2px;
+  color: #111;
+  font-size: 16px;
+}
+/**
+ * Create the pill to click
+ */
+ .mwb_checkboxThree label {
+  display: block;
+  width: 52px;
+  height: 22px;
+  border-radius: 50px;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  z-index: 1;
+  left: 12px;
+  background: #ddd;
+}
+/**
+ * Create the checkbox event for the label
+ */
+ .mwb_checkboxThree input[type=checkbox]:checked + label {
+  left: 60px;
+  background: #26ca28;
+}
+.mwb_checkboxThree > input {
+  display: none;
+}
+.mwb_shortlink_area {
+ 
+  width: 300px;
+  
+}
+.mwb_shortlink_area {
+    position: fixed;
+    top: 124px;
+    z-index: 999;
+}
+.mwb_shortlink_area #mwb_shortlink_show_area {
+  background-color: #32373c;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 4px;
+  width: 168px;
+}
+#mwb_display_shortlink a.shortlink {
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: capitalize;
+  width: 98px;
+  
+}
+#mwb_display_shortlink ul li {
+  border-bottom: 1px solid #616161;
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+#mwb_display_shortlink ul li:hover {
+  background: #0073aa;
+}
+#mwb_display_shortlink ul {
+  margin: 0px;
+}
+#mwb_display_shortlink a.remove_shortlink {
+  float: right;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 14px;
+}
+.mwb_shortlink_area #mwb_shortlink_show_area input {
+  border: 1px solid #dddddd ;
+  margin-bottom: 5px;
+  padding: 6px;
+  width: 100%;
+  text-transform: capitalize;
+  text-align:left 20px;
+}
+.mwb_shortlink_area #mwb_shortlink_show_area #mwb_add_shortlink_btn {
+  border: 1px solid #000000 ;
+  color: #777777 ;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 7px 34px;
+  text-decoration: none;
+}
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+  color: #124964;
+  -webkit-box-shadow: 0 0 0 0px #5b9dd9, 0 0 1px 0px rgba(30,140,190,.8);
+  box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8);
+}
+#mwb_shortlink_show_tab.hide:after {
+  position: absolute;
+  content: '';
+  background: #32373c;
+  width: 5px;
+  height: 30px;
+  top: -15px;
+  right: 15px;
+  border-radius: 0px;
+  border-right: 2px solid;
+}
+.mwb_shortlink_area #mwb_shortlink_show_tab.show:after {
+  position: absolute;
+  content: '';
+  background: #32373c;
+  width: 5px;
+  height: 30px;
+  top: -15px;
+  right: -22px;
+  border-radius: 0px;
+  border-left: 2px solid;
+}
+.mwb_div_show {
+  right: -130px !important;
+  transition: 0.5s;
+}
+.mwb_div_show, .mwb_div_hide {
+  right: -301px;
+  transition: 0.5s;
+}
+a#mwb_shortlink_show_tab.hide {
+  position: absolute;
+  right: 301px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #32373c;
+  border-bottom: 15px solid transparent;
+  top: 35px;
+}
+a#mwb_shortlink_show_tab.show {
+  position: absolute;
+  right: 310px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #32373c;
+  border-bottom: 15px solid transparent;
+  top: 40px;
+}
+.mwb_checkboxThree {
+  left: 0;
+  margin-left: 0;
+  top: 20px;
+}
+section.mwb_admin_settings_panel {
+  padding-top: 60px;
+}
+.mwb_div_hide.empty {  
+  border-color: rgb(35,40,45);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 3px rgb(35,40,45);
+  color: #ffffff;
+  min-height: 100px;
+  background: rgb(35,40,45) !important;
+}
+.mwb_div_hide.empty #mwb_empty_drophere {
+   position: absolute;
+  font-size: 24px;
+  left: 25px;
+  top: 33%;
+  font-weight: 600;
+}
+#mwb_display_shortlink #mwb_drophere_note {
+  background: #d1bfbc none repeat scroll 0 0;
+  color: #000000 ;
+  text-align: center;
+}
+#mwb_display_shortlink #mwb_drophere_note:hover{
+  background: #d1bfbc none repeat scroll 0 0;
+}
+#mwb_display_shortlink #mwb_drophere_note p {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+#mwb_loader_image{
+  width: 26px;
+  margin-top: -3px;
+  margin-left: -5px;
+  opacity: 1;
+  
+}
+#mwb_loader_image_add {
+  width: 23%;
+  margin-right: 6px;
+  margin-bottom: -7px;
+}
